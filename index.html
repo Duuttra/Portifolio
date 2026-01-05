@@ -136,6 +136,30 @@
       }
     }
   </style>
+  .home-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 18px;
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.6);
+  animation: float 6s ease-in-out infinite;
+}
+
+@media (max-width: 800px) {
+  .home-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-image img {
+    margin: 0 auto;
+  }
 </head>
 
 <body>
@@ -145,7 +169,7 @@
   <div class="anime-grid">
 
     <div class="anime-card">
-      <img src="blob:https://web.whatsapp.com/e433eaa9-77e1-4bde-ac41-54b515c843fe" alt="Cena anime">
+      <img src="jj" alt="Cena anime">
       <div class="overlay">
         <p>Persistência</p>
       </div>
