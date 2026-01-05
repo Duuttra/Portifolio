@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sexta-feira | Portfólio de Edição</title>
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #0b0b0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* ====== GERAL ====== */
+    section {
+      padding: 70px 8%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+      color: #8b5cf6;
+    }
+
+    /* ====== HOME ====== */
+    .home {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: radial-gradient(circle at top, #1a1a2e, #0b0b0f);
+    }
+
+    .home h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .home p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #cbd5f5;
+      max-width: 600px;
+    }
+
+    /* ====== PORTFÓLIO ====== */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .video-card {
+      background-color: #12121a;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 35px rgba(139, 92, 246, 0.6);
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+
+    /* ====== SOBRE ====== */
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #d1d5db;
+      font-size: 1.05rem;
+    }
+
+    /* ====== CONTATO ====== */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #ffffff;
+      background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+      box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact a:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.9);
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 0.85rem;
+      color: #9ca3af;
+      background-color: #0b0b0f;
+    }
+
+    /* ====== RESPONSIVO ====== */
+    @media (max-width: 600px) {
+      .home h1 {
+        font-size: 2.4rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HOME -->
+  <section class="home">
+    <h1>Sexta-feira</h1>
+    <p>Editor de vídeo focado em reels, shorts e conteúdos dinâmicos para redes sociais.</p>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section>
+    <h2>Portfólio</h2>
+    <div class="portfolio-grid">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section>
+    <h2>Sobre</h2>
+    <div class="about">
+      <p>
+        Sou editor de vídeo especializado em conteúdos curtos e envolventes.
+        Trabalho com reels e shorts focados em retenção, ritmo dinâmico e edições
+        que prendem a atenção do público desde os primeiros segundos.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section>
+    <h2>Contato</h2>
+    <div class="contact">
+      <a href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/seuinstagram" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 • Sexta-feira • Portfólio de Edição
+  </footer>
+
+</body>
+</html>
